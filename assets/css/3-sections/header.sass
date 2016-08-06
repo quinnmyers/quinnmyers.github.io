@@ -1,0 +1,169 @@
+.home-wrap
+  .header
+    background-color: $gunmetal
+    color: white
+    width: 180px
+    .header-position
+      position: fixed
+      top: 0
+      left: 0
+      bottom: 0
+      width: 180px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+
+    .logo
+      h1
+        margin: 0
+        padding: 0
+        font-size: 58px
+        font-family: $mainfont
+        line-height: 50px
+        margin-left: 5px
+      //background:
+        image: url(/assets/images/logo.svg)
+        repeat: no-repeat
+        size: contain
+        position: center
+      height: 120px
+      padding: 10px 0 0 0
+      margin: 0 5px 0 5px
+
+    .site-nav
+      ul
+        a.is-active
+          color: $emerald !important
+          text-decoration: underline
+          text-decoration-color: $emerald
+        a,
+        a:visited
+          text-decoration: none
+        a:hover
+          color: $emerald !important
+          text-decoration: underline
+
+
+    .site-nav
+      ul
+        li a
+          text-decoration: none
+        li a:visited
+          text-decoration: none
+
+    .site-nav
+      ul
+        font-family: 'Raleway', sans-serif
+        font-size: 14px
+        text-align: left
+        list-style: none
+        padding: 0
+        margin-left: 25px
+        a,
+        a:visited
+          text-decoration: none
+          color: white
+      li
+        margin-bottom: 8px
+
+
+        &:last-child
+          margin-bottom: 0px
+
+
+
+    .mobile-nav-button
+      display: none
+
+  .mobile-nav
+    display: none
+
+    ul
+      list-style: none
+      font-family: 'Raleway', sans-serif
+      font-size: 14px
+      margin-left: 25px
+      padding: 0
+      a.is-active
+        color: $emerald !important
+        text-decoration: underline
+        text-decoration-color: $emerald
+      a,
+      a:visited
+        text-decoration: none
+        color: white
+
+
+    .is-active
+      color: red
+
+
+//switch this when i figure out my real size i want to switch into mobile with,
+// dependent on main_layout home-wrap and content-sections media queries
+@media (max-width: 860px)
+  .home-wrap
+    .header
+      width: 100%
+      display: block
+      position: fixed
+      .header-position
+        position: relative
+      .logo
+        height: auto
+        width: 300px
+        margin: 0
+        padding: 0
+        padding-bottom: 8px
+        letter-spacing: 2px
+        h1
+          margin: 0
+          padding: 0
+          font-size: 22px
+          color: white
+
+        width: 170px
+        margin-left: 10px
+        height: 50px
+        margin-top: 5px
+        top: 0
+        left: 0
+        //background:
+          image: url(/assets/images/small-logo.svg)
+          repeat: no-repeat
+          size: contain
+          position: center
+      .site-nav,
+      .bottom
+        display: none
+        margin-top: 0px
+        ul
+          display: inline-block
+      #mobile-button
+        display: flex
+        position: fixed
+        margin-top: 18px
+        margin-right: 15px
+        right: 0
+        top: 0
+        float: right
+        height: 25px
+        width: 40px
+        justify-content: space-between
+        flex-direction: column
+        .center-line
+          display: flex
+          height: 1px
+          background: white
+    .mobile-nav.is-open
+      display: block
+      position: fixed
+      background: $gunmetal
+      color: white
+      width: 100%
+      padding-top: 55px
+      padding-bottom: 15px
+      ul
+      li
+        text-align: right
+        margin-right: 20px
+        margin-bottom: 10px

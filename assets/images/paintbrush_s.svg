@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="40px" height="38px" viewBox="0 0 40 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="195.064584%" y1="43.4613673%" x2="-126.153268%" y2="40.7770594%" id="linearGradient-1">
+            <stop stop-color="#F40000" offset="0%"></stop>
+            <stop stop-color="#A15959" offset="100%"></stop>
+        </linearGradient>
+        <path d="M1.97513602,10.3604317 C2.32758635,8.10531387 3.29601134,0.93320852 3.82378449,0.524610869 C4.92990192,-0.331736203 5.30163586,2.25016526 5.30163586,2.25016526 L5.86770919,6.67313688 C6.12834222,8.70957355 6.44815353,12.0130583 6.5838821,14.0799145 L7.96372907,35.0920366 C8.09862742,37.1462503 6.54085403,38.8115193 4.48168627,38.811519 L4.16302265,38.811519 C2.10504516,38.8115187 0.475972772,37.1465182 0.530716577,35.0956078 C0.530716577,35.0956078 0.884013263,17.3418701 1.97513602,10.3604317 Z" id="path-2"></path>
+        <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="7.4424929" height="38.4609633" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tablet-Portrait" transform="translate(-415.000000, -746.000000)">
+            <g id="Group-4" transform="translate(411.000000, 742.000000)">
+                <g id="Group" transform="translate(17.860158, 17.860267) rotate(-45.000000) translate(-17.860158, -17.860267) translate(13.360158, -1.639733)" stroke="#A22626" stroke-width="2" fill="url(#linearGradient-1)">
+                    <use id="Rectangle-4" mask="url(#mask-3)" transform="translate(4.250623, 19.581037) rotate(1.000000) translate(-4.250623, -19.581037) " xlink:href="#path-2"></use>
+                </g>
+                <path d="M33.8873548,40.6124481 C36.2849074,40.6124481 43.6486928,36.5883316 43.6486928,34.7065292 C43.6486928,33.6678196 41.267588,34.6493598 38.8540257,34.7065292 C36.8950016,34.7529322 34.9615162,33.7978388 33.8873548,33.7978388 C31.4898021,33.7978388 29.5462016,35.3233411 29.5462016,37.2051435 C29.5462016,39.0869459 31.4898021,40.6124481 33.8873548,40.6124481 Z" id="Oval-4" stroke="#7D4F26" fill="#B17A49" transform="translate(36.597447, 37.205143) rotate(45.000000) translate(-36.597447, -37.205143) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

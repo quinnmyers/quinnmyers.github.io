@@ -1,0 +1,129 @@
+.home-wrap
+  display: flex
+  min-height: 100vh
+
+  //change this later when i know what dimension mobile is, check content-sections below
+  @media (max-width: 860px)
+    display: block
+
+.content-sections
+  flex: 1
+  width: calc(100% - 180px)
+  height: auto
+
+  //mobile width setting, check home-wrap above media query and header media query
+  @media (max-width: 860px)
+    width: 100%
+
+  section
+    //padding here if you want
+
+
+  .flex
+    display: flex
+    flex-direction: rows
+
+  .flex-center
+    justify-content: center
+
+  .flex-space
+    flex-direction: columns
+    justify-content: space-around
+
+  .flex-left
+    flex-direction: columns
+    justify-content: center
+
+  .flex-right
+    flex-direction: columns
+    justify-content: flex-end
+
+
+  .order-bottom
+    order: -1
+
+
+
+
+
+
+
+//columns
+
+.col-1
+  display: flex
+  max-width: 400px
+  margin: 0 10px
+  justify-content: center
+
+
+.col-2
+  max-width: 680px
+  margin: 0 10px
+  display: flex
+
+.col-3
+  height: 100%
+  max-width: 400px
+  margin: 0 10px
+  display: flex
+  margin-right: 250px
+
+.col-4
+  display: flex
+  max-width: 250px
+  margin: 0 10px
+
+.col-5
+  display: flex
+  max-width: 500px
+  margin: 0 10px
+
+.col-6
+  display: flex
+  max-width: 400px
+  margin: 0 10px
+  margin-right: 100px
+
+.col-7
+  display: flex
+  max-width: 100px
+  float: left
+  align-self: flex-start  
+
+.col-title
+  font-family: $mainfont
+  font-size: 18px
+  text-decoration: underline
+  display: flex
+  margin-left: 15px
+  margin-top: -40px
+
+
+
+@media (max-width: 860px)
+  .content-sections .flex.flex-center
+    display: block
+
+  .col-1
+    display: block
+    max-width: 100%
+
+  .col-2
+    max-width: 100%
+
+@media (max-width: 1015px)
+  .content-sections .flex.flex-space
+    display: block
+  .col-1
+    max-width: 100%
+    display: block
+
+@media (max-width: 940px)
+  .content-sections .flex.flex-left
+    display: block
+  .col-4
+    max-width: 100%
+  .col-5
+    margin-top: 25px
+    max-width: 100%

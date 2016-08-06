@@ -1,0 +1,221 @@
+.portfolio
+  margin-top: 75px
+  background: $lightgrey
+  .name
+    font-family: $mainfont
+    text-decoration: underline
+    font-size: 20px
+    margin-bottom: 20px
+    font-weight: bolder
+    letter-spacing: 1px
+  .portfolio1
+    display: flex
+    flex-direction: row
+    width: 400px
+    //change this height if i want to not include thumbnails
+    height: 400px
+    margin: auto
+    background:
+      image: url("/assets/images/robert_site/home@2x.png")
+      size: contain
+      repeat: no-repeat
+    .thumbnails1
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      padding-top: 10px
+      height: 100px
+      width: 100%
+      background: $lightgrey
+      align-self: flex-end
+      .one_thumb1,
+      .one_thumb2,
+      .one_thumb3,
+      .one_thumb4,
+        display: flex
+        height: 100%
+        width: 100px
+        margin-left: 5px
+      .one_thumb1
+        background:
+          image: url("/assets/images/robert_site/landing@2x.png")
+          size: contain
+          repeat: no-repeat
+      .one_thumb2
+        background:
+          image: url("/assets/images/robert_site/bio.png")
+          size: contain
+          repeat: no-repeat
+      .one_thumb3
+        background:
+          image: url("/assets/images/robert_site/contact.png")
+          size: contain
+          repeat: no-repeat
+      .one_thumb4
+        display: flex
+        height: 86px
+        width: 100px
+        border: 1px solid $gunmetal
+        &:hover
+          text-decoration: underline
+        .home-btn
+          height: auto
+          margin: auto
+          p
+            font-family: $mainfont
+            letter-spacing: 1px
+            margin: 0
+
+
+
+
+
+  .portfolio2
+    display: flex
+    flex-direction: row
+    width: 400px
+    //change this height if i want to not include thumbnails
+    height: 400px
+    margin: auto
+    background:
+      image: url("/assets/images/siq_site/siqliquidhome.png")
+      size: contain
+      repeat: no-repeat
+    .thumbnails2
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      height: 110px
+      width: 100%
+      background: $lightgrey
+      align-self: flex-end
+
+      .two_thumb1,
+      .two_thumb2,
+      .two_thumb3,
+      .two_thumb4,
+        display: flex
+        height: 100%
+        width: 100px
+        margin-left: 5px
+      .two_thumb1
+        background:
+          image: url("/assets/images/siq_site/siqwholesale.png")
+          size: contain
+          repeat: no-repeat
+      .two_thumb2
+        background:
+          image: url("/assets/images/siq_site/siqabout.png")
+          size: contain
+          repeat: no-repeat
+      .two_thumb3
+        display: flex
+        height: 65px
+        width: 100px
+        border: 1px solid $gunmetal
+        &:hover
+          text-decoration: underline
+        .home-btn
+          height: auto
+          margin: auto
+          p
+            font-family: $mainfont
+            letter-spacing: 1px
+            margin: 0
+      .two_thumb4
+
+
+  .portfolio3
+    display: flex
+    flex-direction: row
+    width: 400px
+    //change this height if i want to not include thumbnails
+    height: 400px
+    margin: auto
+    background:
+      image: url("/assets/images/bh_site/bhhome.png")
+      size: contain
+      repeat: no-repeat
+    .thumbnails3
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      height: 110px
+      width: 100%
+      background: $lightgrey
+      align-self: flex-end
+      .three_thumb1,
+      .three_thumb2,
+      .three_thumb3,
+      .three_thumb4,
+        display: flex
+        height: 100%
+        width: 100px
+        margin-left: 5px
+      .three_thumb1
+        background:
+          image: url("/assets/images/bh_site/bhfeatured.png")
+          size: contain
+          repeat: no-repeat
+      .three_thumb2
+        background:
+          image: url("/assets/images/bh_site/bhabout.png")
+          size: contain
+          repeat: no-repeat
+      .three_thumb3
+        background:
+          image: url("/assets/images/bh_site/bhcontact.png")
+          size: contain
+          repeat: no-repeat
+
+      .three_thumb4
+        display: flex
+        height: 65px
+        width: 100px
+        border: 1px solid $gunmetal
+        &:hover
+          text-decoration: underline
+        .home-btn
+          height: auto
+          margin: auto
+          p
+            font-family: $mainfont
+            letter-spacing: 1px
+            margin: 0
+
+  .desc-container
+    display: flex
+    flex-direction: columns
+    .desc
+      display: flex
+      flex-direction: column
+      height: auto
+      h4
+        margin: 0
+        text-decoration: underline
+        font-family: $mainfont
+      p
+        margin: 0
+        font-family: $mainfont
+        line-height: 25px
+      .tech
+        font-size: 14px
+      .tech-used
+        font-size: 16px
+        margin-top: 25px
+        margin-bottom: 10px
+
+
+
+
+@media (max-width: 860px)
+  .portfolio1
+    margin-bottom: 20px !important
+  .portfolio2
+    margin-bottom: 20px !important
+  .portfolio3
+    margin-bottom: 20px !important
+  .desc-container.last
+    padding-bottom: 60px
+  .name
+    margin: auto

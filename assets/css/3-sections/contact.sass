@@ -1,0 +1,159 @@
+.contact
+  background: $gunmetal
+  margin-top: 75px
+  color: white
+  .social
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    height: 75px
+    width: 100%
+    .social-icon-cont
+      display: flex
+      align-self: center
+      justify-content: space-around
+      height: 100%
+      width: 250px
+      .twitter
+        width: 75px
+        height: 75px
+        background:
+          image: url("/assets/images/Twitter_icon.svg")
+          size: contain
+          repeat: no-repeat
+
+      .github
+        width: 75px
+        height: 75px
+        background:
+          image: url("/assets/images/Github_icon.svg")
+          size: contain
+          repeat: no-repeat
+  .contact-form
+    margin: auto
+    margin-bottom: 45px
+    color: white
+    background: $gunmetal
+    .form-container
+      display: flex
+      .name,
+      .email,
+      .subject,
+      .message
+        p
+          font-family: $mainfont
+          font-size: 14px
+          text-decoration: underline
+          padding: 0
+          margin: 0
+          margin-bottom: 5px
+        input
+          margin-bottom: 10px
+          font-family: $mainfont
+        textarea
+          font-family: $mainfont
+      .name,
+      .email,
+      .subject
+        .yourname,
+        .youremail,
+        .yoursubject
+          width: 200px
+          height: 30px
+          border: 1px solid $gunmetal
+          border-radius: 3px
+      .message
+        .yourmessage
+          width: 420px
+          height: 150px
+          border: 1px solid $gunmetal
+          border-radius: 3px
+          text-align: top
+          resize: none
+      .button
+        .submitbutton
+          width: 100px
+          color: white
+          height: 35px
+          font-family: $mainfont
+          float: right
+          border-radius: 3px
+          background: $gunmetal
+          border: 1px solid white
+
+        .submitbutton:hover
+          background-color: $emerald
+          color: white
+          border: 1px solid white
+
+
+  .text-con
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    height: 380px
+    .contact-text
+      display: flex
+      flex-direction: column
+      margin-top: 20px
+      text-align: center
+      max-width: 300px
+      .contact-copy
+        display: flex
+        align-self: center
+        font-size: 14px
+        line-height: 25px
+        font-family: $mainfont
+        color: white
+      .headshot
+        margin-top: -100px
+        display: flex
+        align-self: center
+        height: 100px
+        width: 100px
+        border-radius: 100%
+        background:
+          image: url(/assets/images/headshot_2.jpg)
+          repeat: no-repeat
+          size: contain
+    .social
+      display: flex
+      height: 75px
+      width: 100%
+      align-self: flex-end
+
+
+
+@media (max-width: 940px)
+  .contact
+    .contact-text
+      .headshot
+        margin-top: 0px !important
+    .text-con
+      margin: auto
+
+    .contact-form
+      width: 100%
+      .form-container
+        display: flex
+        justify-content: center
+        width: 100%
+        .name,
+        .email,
+        .subject
+          .yourname,
+          .youremail,
+          .yoursubject
+            display: flex
+            width: 320px
+        .message
+          .yourmessage
+            width: 320px
+        .button
+          .submitbutton
+            margin-right: 2px
+
+          .submitbutton:hover
+            background-color: white
+            color: $emerald
+            border: 1px solid $emerald
