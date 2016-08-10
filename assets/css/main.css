@@ -453,12 +453,11 @@ textarea {
       position: relative; }
     .home-wrap .header .logo {
       height: auto;
-      width: 300px;
+      width: 150px;
       margin: 0;
       padding: 0;
       padding-bottom: 8px;
       letter-spacing: 2px;
-      width: 170px;
       margin-left: 10px;
       height: 50px;
       margin-top: 5px;
@@ -580,6 +579,10 @@ textarea {
   .aboutme-copy {
     margin-top: 0px !important;
     margin-bottom: 30px; } }
+
+@media (max-width: 415px) {
+  .aboutme {
+    width: 100% !important; } }
 
 .skills {
   margin-top: 50px; }
@@ -738,6 +741,24 @@ textarea {
   .skill-container-2 {
     margin-top: 50px !important; } }
 
+@media (max-width: 415px) {
+  .skill-container-1,
+  .skill-container-2 {
+    width: calc(100% - 20px) !important; }
+  .progress-1,
+  .progress-2,
+  .progress-3,
+  .progress-4 {
+    width: 150px !important; }
+  .icon-1,
+  .icon-2,
+  .icon-3,
+  .icon-4 {
+    -ms-flex-item-align: center;
+        align-self: center;
+    height: 110px !important;
+    width: 110px !important; } }
+
 .nt-test {
   padding-top: 70px; }
   .nt-test .nt-container {
@@ -747,7 +768,8 @@ textarea {
         flex-direction: column;
     -ms-flex-pack: justify;
         justify-content: space-between;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 400px;
     margin: auto; }
     .nt-test .nt-container .ntskill1 {
@@ -928,7 +950,9 @@ textarea {
 
 @media (max-width: 680px) {
   .nt-container {
-    margin: auto; } }
+    margin: auto; }
+  .nt-text {
+    margin-top: 40px !important; } }
 
 .portfolio {
   margin-top: 75px;
@@ -1151,6 +1175,16 @@ textarea {
     padding-bottom: 60px; }
   .name {
     margin: auto; } }
+
+@media (max-width: 415px) {
+  .portfolio1,
+  .portfolio2,
+  .portfolio3 {
+    width: 300px !important; }
+  .portfolio2 {
+    height: 350px !important; }
+  .portfolio3 {
+    height: 350px !important; } }
 
 .testimonials {
   margin-top: 50px; }
@@ -1497,6 +1531,21 @@ textarea {
         color: #49C67D;
         border: 1px solid #49C67D; } }
 
+@media (max-width: 330px) {
+  .name .yourname,
+  .name .youremail,
+  .name .yoursubject,
+  .email .yourname,
+  .email .youremail,
+  .email .yoursubject,
+  .subject .yourname,
+  .subject .youremail,
+  .subject .yoursubject {
+    width: 300px !important;
+    margin: auto; }
+  .message .yourmessage {
+    width: 300px !important; } }
+
 .home-wrap {
   display: -ms-flexbox;
   display: flex;
@@ -1622,3 +1671,9 @@ textarea {
   .col-5 {
     margin-top: 25px;
     max-width: 100%; } }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden; } }
